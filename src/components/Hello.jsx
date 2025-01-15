@@ -1,17 +1,17 @@
 const who = "It's me Component";
 
 function displayContent() {
-  return <p>Hallo Kemisola, wie geh't es dir</p>;
+	return <h2>Hallo from the other side, wie geh't es dir</h2>;
 }
 
-
 function Hello() {
-  return (
+	return (
 		<div>
 			<h1>
-				Hello from the other side! {who} {10 / 2}
+				{who} {10 / 2}
 			</h1>
 			{displayContent()}
+			<h3>Es dir mit gut</h3>
 		</div>
 	);
 }
