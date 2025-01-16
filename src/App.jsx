@@ -5,7 +5,8 @@ function App() {
 	return (
 		<div className="greetings">
 			<Hello />
-			<Property type="duplex" location="ibeju lekki" />
+			<Property type="Church" location="Ibeju Lekki" emoji="⛪" />
+			<Property type="GardenHouse" location="Eleyele" emoji="🏡" />
 		</div>
 	);
 }
