@@ -4,17 +4,24 @@ import Property from "./components/Property";
 
 
 function App() {
-	const numbs=[1,2,3]
+	// const numbs=[1,2,3]
+	const person = {
+		name: "Funmi",
+		gender: "Female",
+		hobby: "Dancing",
+	};
 	return (
 		<main>
 			<div className="miniApp">
-				<FunfactApp/>
+				<FunfactApp />
 			</div>
 
 			<div className="greetings">
 				<Hello />
-				<Property type="Church" location="Ibeju Lekki" emoji="⛪" numbs={numbs} />
+				<Property person={person} />
 				
+				{/* parsing arrays "numbs" to props */}
+				{/* <Property type="Church" location="Ibeju Lekki" emoji="⛪" numbs={numbs} /> */}
 			</div>
 		</main>
 	);

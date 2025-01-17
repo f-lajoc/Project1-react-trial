@@ -8,14 +8,23 @@
 // 	);
 // }
 
-//DESTRUCTURING PROPS
+////DESTRUCTURING PROPS
+////parsing arrays to props
 
-function Property({ location, type, emoji, numbs }) {
+// function Property({ location, type, emoji, numbs, person }) {
+// 	return (
+// 		<div>
+// 			I own a {type} in {location}, house number {numbs}
+// 			{emoji}
+// 		</div>
+// 	);
+
+////pasrsing objects to props
+function Property({person }) {
 	return (
-		<h1>
-			I own a {type} in {location}, house number {numbs}
-			{emoji}
-		</h1>
+		<div>
+			{person.name} is a {person.gender} that loves {person.hobby}
+		</div>
 	);
 }
 export default Property;
