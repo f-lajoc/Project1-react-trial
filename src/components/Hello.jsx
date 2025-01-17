@@ -6,13 +6,13 @@ function displayContent() {
 
 function Hello() {
 	return (
-		<div>
+		<section>
 			<h1>
 				{who} {10 / 2}
 			</h1>
 			{displayContent()}
 			<h3>Es dir mit gut</h3>
-		</div>
+		</section>
 	);
 }
 export default Hello;

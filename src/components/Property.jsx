@@ -10,10 +10,10 @@
 
 //DESTRUCTURING PROPS
 
-function Property({ location, type, emoji }) {
+function Property({ location, type, emoji, numbs }) {
 	return (
 		<h1>
-			I own a {type} in {location}
+			I own a {type} in {location}, house number {numbs}
 			{emoji}
 		</h1>
 	);
