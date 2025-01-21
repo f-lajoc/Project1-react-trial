@@ -3,9 +3,9 @@ export default function Fruits(){
   return (
 		<aside>
 			<ul>
-				{fruits.map((fruit => (
+				{fruits.map((fruit) => (
 					<li key={fruit}>{fruit}</li>
-				)))}
+				))}
 			</ul>
 		</aside>
 	);
