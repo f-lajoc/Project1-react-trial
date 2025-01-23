@@ -1,3 +1,4 @@
+import ConditionalComponent from "./components/ConditionalComponent";
 import Fruits from "./components/Fruits";
 import FunfactApp from "./components/FunfactApp";
 import Hello from "./components/Hello";
@@ -20,9 +21,10 @@ function App() {
 			<div className="greetings">
 				<Hello />
 				<Property person={person} />
-				<Fruits />
+				
 				{/* //parsing array "numbs" to props */}
 				{/* <Property type="Church" location="Ibeju Lekki" emoji="⛪" numbs={numbs} /> */}
+				<ConditionalComponent/>
 				<Vehicles />
 			</div>
 		</main>

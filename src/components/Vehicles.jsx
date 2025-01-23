@@ -1,3 +1,5 @@
+import Vehicle from "./Vehicle";
+
 const vehicles = [
 	{ name: "Powerbike", colour: "Lemon", price: 1000, emoji: "🚲" },
 	{ name: "Sportscar", colour: "Black", price: 10900, emoji: "🏎" },
@@ -9,10 +11,13 @@ export default function Vehicles() {
 		<main>
 			<ul>
 				{vehicles.map((vehicle) => (
-					<li key="vehicle.name">
-						{vehicle.emoji} {vehicle.colour} {vehicle.name} costs $
-						{vehicle.price}
-					</li>
+					<Vehicle
+						key={vehicle.name}
+						name={vehicle.name}
+						colour={vehicle.colour}
+						price={vehicle.price}
+						emoji={vehicle.emoji}
+					/>
 				))}
 			</ul>
 		</main>
