@@ -1,13 +1,11 @@
-export default function Vehicle({ name, price, emoji, colour }) {
+export default function Vehicle({ name, price, emoji, colour, soldout }) {
 	return (
 		<>
-			{price > 800 ? (
+		
 				<li>
-					{emoji} {colour} {name} costs ${price}
+					{emoji} {colour} {name} costs ${price} {soldout? "🛑unavailable": ""}
 				</li>
-			) : (
-				""
-			)}
+		
 		</>
 	);
 }

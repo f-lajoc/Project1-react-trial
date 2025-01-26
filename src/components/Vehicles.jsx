@@ -1,11 +1,41 @@
 import Vehicle from "./Vehicle";
 
 const vehicles = [
-	{ name: "Powerbike", colour: "Lemon", price: 1000, emoji: "🚲" },
-	{ name: "Sportscar", colour: "Black", price: 1900, emoji: "🏎" },
-	{ name: "Tesla truck", colour: "Red", price: 2000, emoji: "🚚" },
-	{ name: "Koenisegg", colour: "Green", price: 1800, emoji: "🚙" },
-	{ name: "Highlander", colour: "Blue", price: 800, emoji: "🚘" },
+	{
+		name: "Powerbike",
+		colour: "Lemon",
+		price: 1000,
+		emoji: "🚲",
+		soldout: false,
+	},
+	{
+		name: "Sportscar",
+		colour: "Black",
+		price: 1900,
+		emoji: "🏎",
+		soldout: true,
+	},
+	{
+		name: "Tesla truck",
+		colour: "Red",
+		price: 2000,
+		emoji: "🚚",
+		soldout: false,
+	},
+	{
+		name: "Koenisegg",
+		colour: "Green",
+		price: 1800,
+		emoji: "🚙",
+		soldout: false,
+	},
+	{
+		name: "Highlander",
+		colour: "Blue",
+		price: 800,
+		emoji: "🚘",
+		soldout: true,
+	},
 ];
 
 export default function Vehicles() {
@@ -19,6 +49,7 @@ export default function Vehicles() {
 						colour={vehicle.colour}
 						price={vehicle.price}
 						emoji={vehicle.emoji}
+						soldout={vehicle.soldout}
 					/>
 				))}
 			</ul>
