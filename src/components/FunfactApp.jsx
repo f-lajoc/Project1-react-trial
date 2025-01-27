@@ -2,7 +2,7 @@
 function FunfactApp() {
 	return (
 		<>
-			<header>
+			<header >
 				<img alt="logo on top" src="bulb.jpg" width="30px"></img>
 			</header>
 			<main>

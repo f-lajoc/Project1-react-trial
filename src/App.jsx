@@ -5,6 +5,8 @@ import Hello from "./components/Hello";
 import Property from "./components/Property";
 import Vehicles from "./components/Vehicles";
 
+const pageStyle = { backgroundColor: "black", color: "white" };
+
 function App() {
 	// const numbs=[1,2,3]
 	const person = {
@@ -13,7 +15,7 @@ function App() {
 		hobby: "Dancing",
 	};
 	return (
-		<main>
+		<main style={pageStyle}>
 			<div className="miniApp">
 				<FunfactApp />
 			</div>

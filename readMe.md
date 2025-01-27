@@ -33,4 +33,9 @@
 	}
 	return message;
 }```
-  
+  - 4 ways of styling react apps:
+  inline styling, css stylesheets (have only one stylesheet for the app), css modules (have stylesheets for each components), use a library(e.g tailwind css)
+  -- For inline styling:
+  -  [check Fruits.jsx for reference] Two curly brackets are used, the outermost to be able to write javascript code, the innermost to define object in which the css properties are stated in. e.g ``<p style={{color: "red", textAlign: "center"}}></p>``
+  -  Also, camelCasing is used for css properties that has hyphen in react inline styling. e.g instead of ``font-size: 50px``, we use ``fontSize: 50px, ``
+  - [check App.jsx for reference] For clean code, the inline styles could be declared in a const at the top e.g. ``const pageStyle = { backgroundColor: "black", color: "white" };`` and used down the code. e.g. ``<main style={pageStyle}></main>
