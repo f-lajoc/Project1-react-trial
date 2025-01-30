@@ -1,11 +1,12 @@
+import styles from "./funFactApp.module.css"
 
 function FunfactApp() {
 	return (
 		<>
-			<header >
+			<header>
 				<img alt="logo on top" src="bulb.jpg" width="30px"></img>
 			</header>
-			<main>
+			<main className={styles.body}>
 				<h1>Fun Facts About React</h1>
 				<ol>
 					<li>Was first released in 2013</li>

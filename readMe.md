@@ -40,3 +40,5 @@
   -  Also, camelCasing is used for css properties that has hyphen in react inline styling. e.g instead of ``font-size: 50px``, we use ``fontSize: 50px, ``
   - [check App.jsx for reference] For clean code, the inline styles could be declared in a const at the top e.g. ``const pageStyle = { backgroundColor: "black", color: "white" };`` and used down the code. e.g. ``<main style={pageStyle}>...</main>
   - [check App.jsx for reference] To use external css stylesheet, you need to import it in the particular component the style is applicable in
+  - [check vehicle.module.css OR funFactApp.module.css for reference] Styling each componenet using css modules. you put your styles in a newly created file ending with ``module.css``. 
+- [check Vehicle.jsx OR FunFactApp.jsx for reference] Then import at the top in the component file ``import styles from "./..."``. then use in page ``className={styles.header}``
