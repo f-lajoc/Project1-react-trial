@@ -5,7 +5,7 @@ import Hello from "./components/Hello";
 import Property from "./components/Property";
 import Vehicles from "./components/Vehicles";
 
-const pageStyle = { backgroundColor: "black", color: "white" };
+const pageStyle = { backgroundColor: "black", color: "pink", margin:"2em", padding: "4em" };
 
 function App() {
 	// const numbs=[1,2,3]

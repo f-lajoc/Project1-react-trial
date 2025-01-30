@@ -1,3 +1,5 @@
+import "../css/style.css"
+
 const who = "It's me Component";
 
 function displayContent() {
@@ -6,7 +8,7 @@ function displayContent() {
 
 function Hello() {
 	return (
-		<section>
+		<section className="hello-styling">
 			<h1>
 				{who} {10 / 2}
 			</h1>
